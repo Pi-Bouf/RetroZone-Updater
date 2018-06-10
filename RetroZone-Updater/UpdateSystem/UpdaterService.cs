@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Net;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace RetroZone_Updater.UpdateSystem
@@ -47,6 +48,7 @@ namespace RetroZone_Updater.UpdateSystem
             this.updates = await Update.GetFromApi(retroZoneVersion);
             if(this.updates == null)
             {
+                Thread.Sleep(2000);
                 Environment.Exit(0);
             }
             if(this.retroZoneVersion.value == "NEW")

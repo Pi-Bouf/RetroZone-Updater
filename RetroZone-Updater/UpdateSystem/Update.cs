@@ -39,6 +39,7 @@ namespace RetroZone_Updater.UpdateSystem
             }
             catch
             {
+                MessageBox.Show("We are sorry, RetroZone server can't be contacted... Check your network ! \n\nVisit retro-zone.net for more help !");
                 return null;
             }
         }
