@@ -16,7 +16,7 @@ namespace RetroZone_Updater
             {
                 for(int i = 0; i < args.Length; i++)
                 {
-                    switch(args[0])
+                    switch(args[i])
                     {
                         case "--api-url":
                             {

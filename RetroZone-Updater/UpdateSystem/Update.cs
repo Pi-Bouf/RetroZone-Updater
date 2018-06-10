@@ -29,7 +29,7 @@ namespace RetroZone_Updater.UpdateSystem
 
             if (response.ErrorException != null)
             {
-                MessageBox.Show("We are sorry, RetroZone server can't be contacted... Check your network ! \n\nVisit retrozone.net for more help !");
+                MessageBox.Show("We are sorry, RetroZone server can't be contacted... Check your network ! \n\nVisit retro-zone.net for more help !");
                 return null;
             }
 
